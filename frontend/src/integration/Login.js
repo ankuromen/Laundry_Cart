@@ -34,7 +34,7 @@ const Login = () => {
       redirect: 'follow'
     };
 
-    fetch(`http://localhost:5055/api/login`, requestOptions)
+    fetch(`https://laundry-cart-api.vercel.app/api/login`, requestOptions)
       .then(response => response.json())
       .then(result => {
         if(result.token){
