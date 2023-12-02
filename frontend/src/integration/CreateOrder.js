@@ -352,7 +352,7 @@ const CreateOrder = () => {
             console.log("User Email: ", userEmail);
 
             try {
-                const response = await fetch("http://localhost:5055/api/create/order", {
+                const response = await fetch("https://laundry-cart-api.vercel.app/api/create/order", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
