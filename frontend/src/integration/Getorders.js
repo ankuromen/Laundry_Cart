@@ -29,7 +29,7 @@ const Getorders = () => {
 
             };
 
-            fetch("http://localhost:5055/api/orders", options)
+            fetch("https://laundry-cart-api.vercel.app/api/orders", options)
                 .then(response => response.json())
                 .then(result => {
                     console.log(result)
