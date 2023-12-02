@@ -50,7 +50,7 @@ const Register = () => {
       redirect: 'follow'
     };
 
-    fetch("https://laundry-cart-api.vercel.app/api/register", requestOptions)
+    fetch("https://laundry-cart-api.vercel.app/register", requestOptions)
       .then(response => response.json())
       .then(result => { console.log(result); })
       .catch(error => console.log('error', error));
