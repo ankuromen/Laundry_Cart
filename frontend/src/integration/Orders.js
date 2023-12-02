@@ -22,7 +22,7 @@ const Orders = ({ orders }) => {
 
             };
 
-            fetch(`http://localhost:5055/api/orders/${orderToBeDeleted}`, options)
+            fetch(`https://laundry-cart-api.vercel.app/api/orders/${orderToBeDeleted}`, options)
                 .then(response => {
                     if (response.ok) {
                         alert("Order deleted Successfully");
