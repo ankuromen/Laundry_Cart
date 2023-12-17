@@ -1,6 +1,6 @@
 import './App.css';
-import { useEffect } from 'react';
-import { Routes, Route,useNavigate } from "react-router-dom"
+
+import { Routes, Route } from "react-router-dom"
 import Login from './integration/Login';
 import Home from './integration/Home';
 import Privatecomponent from './integration/privatecomponent.js';
@@ -14,9 +14,6 @@ console.log("port=",BASE_URL);
 function App() {
   let navigate=useNavigate();
 
-  useEffect(() => {
-    navigate('/login');
-  }, [navigate]);
 
   return (
     <div className="App">
