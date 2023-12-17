@@ -12,8 +12,6 @@ const BASE_URL = process.env.REACT_APP_BASE_URL;
 console.log("port=",BASE_URL);
 
 function App() {
-  let navigate=useNavigate();
-
 
   return (
     <div className="App">
